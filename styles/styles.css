@@ -1,0 +1,316 @@
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  min-height: 95px;
+  margin-bottom: 85px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.nav {
+  margin-right: 50px;
+}
+
+.link-nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(149, 225, 211);
+  transition: color 0.2s linear;
+}
+
+.nav:hover .link-nav {
+  color: rgb(243, 129, 129);
+}
+.link-nav::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: auto;
+  background-color: inherit;
+  margin-top: 12px;
+  transition: all 0.2s linear;
+}
+.nav:hover .link-nav::after {
+  background-color: rgb(243, 129, 129);
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(149, 225, 211);
+  padding: 25px 0;
+}
+
+.the-headline {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  line-height: 40px;
+  color: rgb(51, 51, 51);
+  margin: 0 auto;
+}
+.the-headline::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: rgb(243, 129, 129);
+  margin: 20px auto 40px;
+}
+
+.part-of-the-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.service-item:nth-child(-n + 3) {
+  margin-bottom: 90px;
+}
+.service-item {
+  flex-basis: 383px;
+  box-sizing: border-box;
+  padding-left: 83px;
+  background-position: top left 10%;
+  background-repeat: no-repeat;
+}
+
+.icon-photography {
+  background-image: url(../images/alarm.png);
+}
+.icon-web {
+  background-image: url(../images/line-graph.png);
+}
+.icon-creativity {
+  background-image: url(../images/computer-ok.png);
+}
+.icon-seo {
+  background-image: url(../images/book2.png);
+}
+
+.icon-css {
+  background-image: url(../images/home.png);
+}
+
+.icon-digital {
+  background-image: url(../images/line-graph.png);
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  margin: 0;
+  margin-bottom: 17px;
+}
+.service-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+  margin: 0;
+}
+
+.team-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(153, 153, 153);
+  margin: 0 auto;
+  text-align: center;
+  width: 980px;
+  margin-bottom: 90px;
+}
+.member-of-the-team {
+  margin-bottom: 80px;
+  position: relative;
+}
+.team {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.team-photo {
+  display: inline-block;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 0.2s linear;
+  top: 0;
+  left: 0;
+}
+.shadow-team-photo {
+  display: inline-block;
+  background-color: rgb(149, 225, 211);
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.member-of-the-team:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.member-of-the-team:hover .team-photo {
+  transform: translate(-10px, -10px);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.block-social-network {
+  display: flex;
+  min-width: 224px;
+  padding: 0;
+}
+.social-network:nth-child(-n + 3) {
+  border-right: solid 1px;
+  border-color: rgb(243, 129, 129);
+}
+.social-network {
+  width: 56px;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(252, 227, 138);
+  transition: all 0.2s linear;
+}
+.social-network:hover {
+  background-color: rgb(149, 225, 211);
+}
+
+.facebook {
+  background-image: url(../images/facebook.png);
+}
+.twitter {
+  background-image: url(../images/twitter.png);
+}
+.pinterest {
+  background-image: url(../images/pinterest.png);
+}
+.instagram {
+  background-image: url(../images/instagram.png);
+}
+.team-member-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+.team-member-position {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  list-style-type: none;
+  color: rgb(153, 153, 153);
+}
+
+.main-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 63px;
+}
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+.link-copyright {
+  color: rgb(243, 129, 129);
+}
+.contact-form {
+  display: flex;
+  width: 380px;
+}
+.contact-form__btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(149, 225, 211);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.contact-form__input {
+  width: 100%;
+  border: solid 1px;
+  border-color: rgb(205, 205, 205);
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(205, 205, 205);
+}

@@ -97,13 +97,13 @@ img {
   padding: 40px 0;
 }
 .service-item:nth-child(-n + 3) {
-  margin-bottom: 90px;
+  margin-bottom: 96px;
 }
 .service-item {
-  flex-basis: 383px;
+  flex-basis: 392px;
   box-sizing: border-box;
-  padding-left: 83px;
-  background-position: top left 10%;
+  padding-left: 92px;
+  background-position: top left 30px;
   background-repeat: no-repeat;
 }
 
@@ -173,16 +173,18 @@ img {
   top: 0;
   left: 0;
 }
-.shadow-team-photo {
-  display: inline-block;
-  background-color: rgb(149, 225, 211);
+.member-of-the-team::after {
+  content: "";
+  display: block;
   position: absolute;
+  background-color: rgb(149, 225, 211);
   width: 380px;
   height: 470px;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
 }
+
 
 .member-of-the-team:hover .overlay {
   visibility: visible;
@@ -209,6 +211,9 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s linear;
+}
+.link-social-network {
+  display: inline-block;
 }
 
 .block-social-network {

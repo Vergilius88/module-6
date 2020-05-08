@@ -24,14 +24,13 @@ img {
 .navigation {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  min-width: 490px;
 }
 .uppercase {
   text-transform: uppercase;
 }
 
-.nav {
-  margin-right: 50px;
-}
 
 .link-nav {
   font-family: "Montserrat", sans-serif;

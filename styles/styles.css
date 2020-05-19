@@ -31,7 +31,6 @@ img {
   text-transform: uppercase;
 }
 
-
 .link-nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -86,6 +85,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 30px;
+  display: block;
 }
 
 .services {
@@ -184,7 +184,6 @@ img {
   z-index: -1;
 }
 
-
 .member-of-the-team:hover .overlay {
   visibility: visible;
   opacity: 1;
@@ -212,7 +211,8 @@ img {
   transition: all 0.2s linear;
 }
 .link-social-network {
-  display: inline-block;
+  display: block;
+  height: 100%;
 }
 
 .block-social-network {
